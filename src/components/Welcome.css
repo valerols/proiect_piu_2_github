@@ -1,0 +1,74 @@
+/* Import cursive calligraphic font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+/* Center align text */
+.text-center {
+  text-align: center;
+}
+
+/* Styling for the welcome page container */
+.welcome-page {
+  padding: 20px; /* Add padding around the container */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack child elements vertically */
+  align-items: center; /* Center align items horizontally */
+}
+
+/* Styling for the banner container */
+.banner-container {
+  background-color: #000; /* Dark background for the banner */
+  padding: 20px; /* Add padding inside the banner */
+  border-radius: 10px; /* Add rounded corners */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center align items vertically */
+  width: 100%; /* Take up full width */
+  max-width: 800px; /* Limit the maximum width to 800px */
+}
+
+/* Styling for the typing container */
+.typing-container {
+  padding: 0; /* No additional padding */
+  margin-bottom: 20px; /* Space below the container */
+}
+
+/* Keyframes for glow animation */
+@keyframes glow {
+  0%,
+  20% {
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white;
+    color: #fff; /* White text color */
+  }
+  100% {
+    text-shadow: 0 0 2px white, 0 0 3px white, 0 0 5px white, 0 0 10px white;
+    color: #fff; /* White text color */
+  }
+}
+
+/* Styling for text with glow effect */
+.glowing-text {
+  font-family: "Dancing Script", cursive; /* Apply the cursive font */
+  font-size: 2em; /* Font size */
+  color: #fff; /* Pure white color */
+  text-align: center; /* Center align text */
+  white-space: nowrap; /* Prevent text wrapping */
+  animation: glow 1s linear forwards; /* Apply the glow animation */
+  animation-play-state: paused; /* Pause the animation initially */
+}
+
+/* Activate animation when text is typing */
+.typing-container .glowing-text.typing-active {
+  animation-play-state: running; /* Start the animation */
+}
+
+/* Styling for the main image */
+img.main-image {
+  max-width: 600px; /* Restrict width */
+  margin: 20px 0; /* Vertical margin */
+}
+
+/* Paragraph styling */
+p {
+  margin-top: 20px; /* Space above the paragraph */
+  color: #000; /* Dark color for contrast on light backgrounds */
+}

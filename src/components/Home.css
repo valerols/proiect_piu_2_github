@@ -1,0 +1,31 @@
+/* Home.css */
+
+/* Container for the form on the home page */
+.home-form {
+  margin-top: 20px; /* Add space between image and form */
+}
+
+/* Styling for each form group */
+.home-form .form-group {
+  margin-bottom: 1.5rem; /* Adjust as needed to create space between form fields */
+}
+
+/* Styling for form labels */
+.home-form .form-label {
+  display: block;
+  margin-bottom: 0.5rem; /* Space between label and input */
+}
+
+/* Styling for form controls (inputs, date pickers) */
+.home-form .form-control,
+.home-form .react-datepicker-wrapper,
+.home-form .react-datepicker__input-container {
+  display: block; /* Make each form control a block element */
+  width: 100%; /* Make form controls full width */
+}
+
+/* Styling for buttons in the form */
+.home-form .btn {
+  width: 100%; /* Make button full width */
+  margin-top: 10px; /* Add space between the last field and button */
+}

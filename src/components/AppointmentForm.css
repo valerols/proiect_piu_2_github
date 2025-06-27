@@ -1,0 +1,18 @@
+/* Styles for the appointment form */
+.appointment-form {
+  padding: 20px; /* Add padding inside the form for better spacing */
+  border: 1px solid #ccc; /* Add a light gray border around the form */
+  border-radius: 5px; /* Round the corners of the form */
+  background-color: #f9f9f9; /* Light gray background color for the form */
+}
+
+/* Styles for each form group element inside the appointment form */
+.appointment-form .form-group {
+  margin-bottom: 1.5rem; /* Add bottom margin to each form group to space them out */
+}
+
+/* Styles for buttons inside the appointment form */
+.appointment-form .btn {
+  width: 100%; /* Make the button take the full width of its container */
+  margin-top: 10px; /* Add some space between the last field and the button */
+}

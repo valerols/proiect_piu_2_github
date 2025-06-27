@@ -1,0 +1,22 @@
+/* 
+ * This CSS class targets images with the 'img-fluid' class.
+ * It is typically used to ensure that images are responsive,
+ * scaling correctly within their parent containers.
+ */
+.img-fluid {
+  /* 
+   * Ensures the image's width does not exceed 100% of its container,
+   * which helps the image to resize dynamically.
+   * Example: If the parent container has a width of 300px,
+   * the image will be at most 300px wide.
+   */
+  max-width: 100%;
+
+  /* 
+   Maintains the aspect ratio of the image as it scales. 
+   * If the image is 800x600, for example, and the width
+   * is scaled down to 400px, the height will automatically
+   * be adjusted to 300px to keep the same proportion.
+   */
+  height: auto;
+}
